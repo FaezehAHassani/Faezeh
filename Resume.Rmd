@@ -1,0 +1,95 @@
+---
+name: Faezeh
+surname: Arab Hassani
+position: "Research Fellow"
+address: "Department of Electrical and Computer Engineering, National University of Singapore"
+# phone: +1 22 3333 4444
+# www: mariecurie.com
+# email: "Marie.Curie@ens.fr"
+# twitter: mariecurie
+github: FaezehAHassani
+linkedin: Faezeh Arab Hassani
+googlescholar: Faezeh A Hassani
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+#tinytex::install_tinytex()
+library(vitae)
+```
+
+# Summary
+
+ * **Experience:** Forward-thinking and accomplished electronics research scientist with 7+ years of experience
+ * **Skills:** A strong background in the design, fabrication, and characterization of micro/nano-electronic devices leading to successful generation of products for environmental and healthcare technology
+ * **Career Highlights:**
+   * Attracted 2 research funding, and 2 awards
+   * More than 30 peer reviewed scientific publications
+   * Managed a clean room facility at National University of Singapore
+   * Advised 4 M.Sc. graduate students, and lectured 3 graduate courses
+   * Gave 4 invited talks at the international conferences
+   * Presented at 10 international and local conferences
+   * Reviewer, and associate editor of international journals
+   * Chaired a session at 1 international conference
+   * Organized a local scientific workshop with 50 attendees
+   * Woman in engineering coordinator of IEEE UK student Branch
+
+# Eexperience
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  "JSPS postdoctoral researcher", "2012-13", "Japan Advanced Institute of Science and Technology", "Japan",
+  "Reserach fellow", "2013-14", "National University of Singapore", "Singapore", 
+  "Postdoctoral research associate", "2014-16", "University of Sheffiled", "United Kingdom",
+ "Reserach fellow", "2016-19", "National University of Singapore", "Singapore", 
+ "JSPS invitational researcher", "2019-20", "Japan Advanced Institute of Science and Technology", "Japan",
+ "Reserach fellow", "2020-current", "National University of Singapore", "Singapore" 
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Education
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, 
+  #"Bachelor of Electrical Engineering (Electronics)", "1894", "Sorbonne Université", #"Iran",
+  "Master of Electrical and Electronics Engineering", "2005-08", "University of Tehran", "Tehran, Iran", 
+  "PhD of Electrical and Electronics Engineering", "2008-12", "University of Southampton", "Southampton, United Kingdom"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Fellowships and awards
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  2008, "PhD studentship, University of Southampton", "Awarding body: European FP7 NEMSIC project and University of Southampton",
+  2012, "JSPS postdoctoral fellowship, Japan Advanced Institute of Science and Technology", "Awarding body: Japan Society for the Promotion of Science",
+  2016, "Santander research mobility award, University of Sheffield", "Awarding body: University of Sheffield",
+  2019, "JSPS invitational fellowship, The University of Tokyo", "Awarding body: Japan Society for the Promotion of Science"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+```
+
+# Skills
+• Micro/nano-fabrication • Semiconductors • MEMS/NEMS • Energy harvesting • Flexible Electronics • Sensors and Actuators • ex vivo and in vivo • Finite Element Analysis (FEA) • Biomedical devices
+
+# Scientific affiliations
+ 
+• Member of Japan Society of Applied Physics • Senior Member of IEEE
+ 
+
+# Hobbies
+ 
+• Painting • Badminton • Nature walking
+
+# Publications
+Please check: https://scholar.google.com/citations?user=Veva8EAAAAAJ&hl=en
