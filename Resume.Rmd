@@ -42,11 +42,11 @@ library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, 
   "JSPS postdoctoral researcher", "2012-13", "Japan Advanced Institute of Science and Technology", "Japan",
-  "Reserach fellow", "2013-14", "National University of Singapore", "Singapore", 
+  "Research fellow", "2013-14", "National University of Singapore", "Singapore", 
   "Postdoctoral research associate", "2014-16", "University of Sheffiled", "United Kingdom",
- "Reserach fellow", "2016-19", "National University of Singapore", "Singapore", 
+ "Research fellow", "2016-19", "National University of Singapore", "Singapore", 
  "JSPS invitational researcher", "2019-20", "Japan Advanced Institute of Science and Technology", "Japan",
- "Reserach fellow", "2020-current", "National University of Singapore", "Singapore" 
+ "Research fellow", "2020-current", "National University of Singapore", "Singapore" 
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
